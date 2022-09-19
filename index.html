@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>33 Architecture</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="media/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="media/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="media/favicons/favicon-32x32.png" type="image/png">
+    <link rel="icon" sizes="48x48" href="media/favicons/favicon-48x48.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="media/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="media/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="media/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="media/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="media/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="media/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="media/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="media/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="media/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="media/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="media/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="media/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="media/favicons/apple-touch-icon-1024x1024.png">
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="preload" href="css/vendor.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+</head>
+<body data-sd-map-api="AIzaSyBkPajfNaB9_YtMqjuNOEMbmLt3EN9vVHA">
+    <div class="wrapper">
+        <div class="preloader" id="preloader">
+            <div class="preloader__body">
+                <svg aria-hidden="true">
+                    <use href="media/sprite.svg#logo"></use>
+                </svg>
+                <svg aria-hidden="true">
+                    <use href="media/sprite.svg#logo"></use>
+                </svg>
+            </div>
+        </div>
+        <header class="header fixed-top" id="header" data-sd-auto-expand="true">
+            <div class="header-current" data-sd-distance="data-sd-distance" data-sd-target=".header-navigation .header-navigation-link.active">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="container">
+                <nav class="header-body">
+                    <div>
+                        <a class="header-logo" href="index.html" aria-label="Головна">
+                            <svg viewBox="0 0 77 50" aria-hidden="true">
+                                <use href="media/sprite.svg#logo"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header-menu">
+                        <div class="drawer header-menu-drawer" id="header-menu" tabIndex="-1">
+                            <div class="drawer-body" data-sd-distance="data-sd-distance" data-sd-target=".drawer-menu" data-sd-center="[false]" data-sd-offset="[0, 5.5]">
+                                <div class="lang lang-mobile header-menu-lang">
+                                    <ul class="lang-list reset-list">
+                                        <li class="lang-list-item">
+                                            <a class="lang-link active" href="#">
+                                                <span aria-hidden="true">UA</span>
+                                                <span class="visually-hidden">Українська</span>
+                                            </a>
+                                        </li>
+                                        <li class="lang-list-item">
+                                            <a class="lang-link" href="#">
+                                                <span aria-hidden="true">EN</span>
+                                                <span class="visually-hidden">English</span>
+                                            </a>
+                                        </li>
+                                        <li class="lang-list-item">
+                                            <a class="lang-link" href="#">
+                                                <span aria-hidden="true">DE</span>
+                                                <span class="visually-hidden">Deutsch</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="header-menu-tel">
+                                    <a class="tel" href="tel:+380666364555">
+                                        <span aria-hidden="true">+380 66 636 45 55</span>
+                                        <span class="visually-hidden">Подзвоніть нам: +380 66 636 45 55</span>
+                                    </a>
+                                </div>
+                                <div class="drawer-menu">
+                                    <div class="header-navigation">
+                                        <ul class="header-navigation-list reset-list">
+                                            <li class="header-navigation-item">
+                                                <a class="header-navigation-link active" href="index.html">Головна</a>
+                                            </li>
+                                            <li class="header-navigation-item">
+                                                <a class="header-navigation-link" href="about.html">Про нас</a>
+                                            </li>
+                                            <li class="header-navigation-item">
+                                                <a class="header-navigation-link" href="projects.html">Проєкти</a>
+                                            </li>
+                                            <li class="header-navigation-item">
+                                                <a class="header-navigation-link" href="collaboration.html">Співпраця</a>
+                                            </li>
+                                            <li class="header-navigation-item">
+                                                <a class="header-navigation-link" href="contacts.html">Контакти</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="social header-menu-social">
+                                    <ul class="social-list reset-list">
+                                        <li class="social-list-item">
+                                            <a class="social-link" href="#" target="_blank" aria-label="Наш канал на Ютубі">
+                                                <svg aria-hidden="true">
+                                                    <use href="media/sprite.svg#youtube"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="social-list-item">
+                                            <a class="social-link" href="#" target="_blank" aria-label="Наша сторінка в Інстаграм">
+                                                <svg aria-hidden="true">
+                                                    <use href="media/sprite.svg#instagram"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="social-list-item">
+                                            <a class="social-link" href="#" target="_blank" aria-label="Наша сторінка в Фейсбуці">
+                                                <svg aria-hidden="true">
+                                                    <use href="media/sprite.svg#facebook"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lang dropdown-center header-lang">
+                            <button class="lang-button reset-button" id="header-lang" type="button" data-sd-toggle="dropdown" aria-expanded="false">
+                                <span aria-hidden="true">UA</span>
+                                <span class="visually-hidden">Українська</span>
+                                <svg aria-hidden="true">
+                                    <use href="media/sprite.svg#angle-down"></use>
+                                </svg>
+                            </button>
+                            <div class="dropdown-menu">
+                                <div class="collapse">
+                                    <ul class="lang-list reset-list" aria-labelledby="header-lang">
+                                        <li class="lang-list-item">
+                                            <a class="lang-link dropdown-item" href="#">
+                                                <span aria-hidden="true">EN</span>
+                                                <span class="visually-hidden">English</span>
+                                            </a>
+                                        </li>
+                                        <li class="lang-list-item">
+                                            <a class="lang-link dropdown-item" href="#">
+                                                <span aria-hidden="true">DE</span>
+                                                <span class="visually-hidden">Deutsch</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-contacts">
+                            <a class="tel header-tel" href="tel:+380666364555">
+                                <span aria-hidden="true">+380 66 636 45 55</span>
+                                <span class="visually-hidden">Подзвоніть нам: +380 66 636 45 55</span>
+                            </a>
+                            <div class="social">
+                                <ul class="social-list reset-list">
+                                    <li class="social-list-item">
+                                        <a class="social-link" href="#" target="_blank" aria-label="Наш канал на Ютубі">
+                                            <svg aria-hidden="true">
+                                                <use href="media/sprite.svg#youtube"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-list-item">
+                                        <a class="social-link" href="#" target="_blank" aria-label="Наша сторінка в Інстаграм">
+                                            <svg aria-hidden="true">
+                                                <use href="media/sprite.svg#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-list-item">
+                                        <a class="social-link" href="#" target="_blank" aria-label="Наша сторінка в Фейсбуці">
+                                            <svg aria-hidden="true">
+                                                <use href="media/sprite.svg#facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="drawer-toggle reset-button header-burger" type="button" data-sd-toggle="drawer" data-sd-target="#header-menu" aria-label="Відкрити меню">
+                            <span class="menu-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="section showcase" data-aos="decoration">
+            <div class="showcase-slider" aria-hidden="true">
+                <div class="swiper" id="showcase-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="media/img/showcase-bg.webp" type="image/webp">
+                                <source srcset="media/img/showcase-bg.png" type="image/png">
+                                <img src="media/img/showcase-bg.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="showcase-video" data-sd-video="1wkPMUZ9vX4" data-sd-background="true"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="showcase-body">
+                    <span class="showcase-spacer showcase-spacer-1"></span>
+                    <div class="showcase-content">
+                        <div class="showcase-stripes showcase-stripes-top" data-sd-distance data-sd-target=".showcase-content-body">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="showcase-content-body" data-aos="fade-up">
+                            <h1 class="showcase-title">
+                                <span>Архітектура</span>
+                                <span>Інтер’єри</span>
+                                <span>Комерція</span>
+                            </h1>
+                            <button class="button button-contained reset-button showcase-cta" type="button" data-sd-toggle="modal" data-sd-target="#application">
+                                <span class="ripple"></span>почати
+                            </button>
+                        </div>
+                        <div class="showcase-stripes showcase-stripes-bottom" data-sd-distance data-sd-target=".showcase-cta">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <span class="showcase-spacer showcase-spacer-2"></span>
+                    <div class="showcase-controls" aria-hidden="true">
+                        <div class="showcase-scrollbar"></div>
+                        <div class="showcase-progress"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-stripe selection" data-aos="decoration">
+            <div class="container">
+                <div class="selection-body" data-aos="fade-up">
+                    <h2 class="section-title">
+                        <svg aria-hidden="true">
+                            <use href="media/sprite.svg#triangle-right"></use>
+                        </svg>Останні проєкти
+                    </h2>
+                    <div class="selection-tabs tabs">
+                        <nav class="selection-tabs-header">
+                            <ul class="selection-tabs-header-controls reset-list" role="tablist">
+                                <li role="presentation">
+                                    <button class="selection-tabs-header-item active reset-button tabs-toggle" id="architecture-tab" type="button" data-sd-toggle="tab" data-sd-target="#architecture-tab-pane" role="tab" aria-controls="architecture-tab-pane" aria-selected="true">Архітектура</button>
+                                </li>
+                                <li role="presentation">
+                                    <button class="selection-tabs-header-item reset-button tabs-toggle" id="interior-tab" type="button" data-sd-toggle="tab" data-sd-target="#interior-tab-pane" role="tab" aria-controls="interior-tab-pane" aria-selected="false">Інтер’єри</button>
+                                </li>
+                                <li role="presentation">
+                                    <button class="selection-tabs-header-item reset-button tabs-toggle" id="commerce-tab" type="button" data-sd-toggle="tab" data-sd-target="#commerce-tab-pane" role="tab" aria-controls="commerce-tab-pane" aria-selected="false">Комерція</button>
+                                </li>
+                            </ul>
+                            <div class="selection-tabs-header-active" data-sd-distance data-sd-target=".selection-tabs-header-item.active">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </nav>
+                        <div class="selection-tabs-body tabs-content">
+                            <div class="selection-tabs-body-item tabs-pane fade show active" id="architecture-tab-pane" role="tabpanel" aria-labelledby="architecture-tab" tabindex="0">
+                                <div class="selection-tabs-body-item-body">
+                                    <div class="swiper selection-slider">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a class="selection-item" href="single.html">
+                                                    <div class="selection-item-img" aria-hidden="true">
+                                                        <picture>
+                                                            <source srcset="media/img/selection-1.webp" type="image/webp">
+                                                            <source srcset="media/img/selection-1.png" type="image/png">
+                                                            <img src="media/img/selection-1.png" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="selection-item-title">
+                                                        <span>BST House</span>
+                                                        <svg aria-hidden="true">
+                                                            <use href="media/sprite.svg#angle-right"></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a class="selection-item" href="single.html">
+                                                    <div class="selection-item-img" aria-hidden="true">
+                                                        <picture>
+                                                            <source srcset="media/img/selection-1.webp" type="image/webp">
+                                                            <source srcset="media/img/selection-1.png" type="image/png">
+                                                            <img src="media/img/selection-1.png" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="selection-item-title">
+                                                        <span>BST House</span>
+                                                        <svg aria-hidden="true">
+                                                            <use href="media/sprite.svg#angle-right"></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a class="selection-item" href="single.html">
+                                                    <div class="selection-item-img" aria-hidden="true">
+                                                        <picture>
+                                                            <source srcset="media/img/selection-1.webp" type="image/webp">
+                                                            <source srcset="media/img/selection-1.png" type="image/png">
+                                                            <img src="media/img/selection-1.png" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="selection-item-title">
+                                                        <span>BST House</span>
+                                                        <svg aria-hidden="true">
+                                                            <use href="media/sprite.svg#angle-right"></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-controls">
+                                            <div class="swiper-pagination"></div>
+                                            <div class="swiper-navigation">
+                                                <button class="reset-button swiper-navigation-prev" type="button" aria-label="Назад">
+                                                    <svg aria-hidden="true">
+                                                        <use href="media/sprite.svg#angle-left"></use>
+                                                    </svg>
+                                                </button>
+                                                <button class="reset-button swiper-navigation-next" type="button" aria-label="Вперед">
+                                                    <svg aria-hidden="true">
+                                                        <use href="media/sprite.svg#angle-right"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="selection-tabs-body-item tabs-pane fade" id="interior-tab-pane" role="tabpanel" aria-labelledby="interior-tab" tabindex="0">
+                                <div class="selection-tabs-body-item-body">
+                                    <div class="swiper selection-slider">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a class="selection-item" href="single.html">
+                                                    <div class="selection-item-img" aria-hidden="true">
+                                                        <picture>
+                                                            <source srcset="media/img/selection-2.webp" type="image/webp">
+                                                            <source srcset="media/img/selection-2.png" type="image/png">
+                                                            <img src="media/img/selection-2.png" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="selection-item-title">
+                                                        <span>BST House</span>
+                                                        <svg aria-hidden="true">
+                                                            <use href="media/sprite.svg#angle-right"></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a class="selection-item" href="single.html">
+                                                    <div class="selection-item-img" aria-hidden="true">
+                                                        <picture>
+                                                            <source srcset="media/img/selection-2.webp" type="image/webp">
+                                                            <source srcset="media/img/selection-2.png" type="image/png">
+                                                            <img src="media/img/selection-2.png" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="selection-item-title">
+                                                        <span>BST House</span>
+                                                        <svg aria-hidden="true">
+                                                            <use href="media/sprite.svg#angle-right"></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a class="selection-item" href="single.html">
+                                                    <div class="selection-item-img" aria-hidden="true">
+                                                        <picture>
+                                                            <source srcset="media/img/selection-2.webp" type="image/webp">
+                                                            <source srcset="media/img/selection-2.png" type="image/png">
+                                                            <img src="media/img/selection-2.png" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="selection-item-title">
+                                                        <span>BST House</span>
+                                                        <svg aria-hidden="true">
+                                                            <use href="media/sprite.svg#angle-right"></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-controls">
+                                            <div class="swiper-pagination"></div>
+                                            <div class="swiper-navigation">
+                                                <button class="reset-button swiper-navigation-prev" type="button" aria-label="Назад">
+                                                    <svg aria-hidden="true">
+                                                        <use href="media/sprite.svg#angle-left"></use>
+                                                    </svg>
+                                                </button>
+                                                <button class="reset-button swiper-navigation-next" type="button" aria-label="Вперед">
+                                                    <svg aria-hidden="true">
+                                                        <use href="media/sprite.svg#angle-right"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="selection-tabs-body-item tabs-pane fade" id="commerce-tab-pane" role="tabpanel" aria-labelledby="commerce-tab" tabindex="0">
+                                <div class="selection-tabs-body-item-body">
+                                    <div class="swiper selection-slider">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a class="selection-item" href="single.html">
+                                                    <div class="selection-item-img" aria-hidden="true">
+                                                        <picture>
+                                                            <source srcset="media/img/selection-1.webp" type="image/webp">
+                                                            <source srcset="media/img/selection-1.png" type="image/png">
+                                                            <img src="media/img/selection-1.png" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="selection-item-title">
+                                                        <span>BST House</span>
+                                                        <svg aria-hidden="true">
+                                                            <use href="media/sprite.svg#angle-right"></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a class="selection-item" href="single.html">
+                                                    <div class="selection-item-img" aria-hidden="true">
+                                                        <picture>
+                                                            <source srcset="media/img/selection-1.webp" type="image/webp">
+                                                            <source srcset="media/img/selection-1.png" type="image/png">
+                                                            <img src="media/img/selection-1.png" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="selection-item-title">
+                                                        <span>BST House</span>
+                                                        <svg aria-hidden="true">
+                                                            <use href="media/sprite.svg#angle-right"></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a class="selection-item" href="single.html">
+                                                    <div class="selection-item-img" aria-hidden="true">
+                                                        <picture>
+                                                            <source srcset="media/img/selection-1.webp" type="image/webp">
+                                                            <source srcset="media/img/selection-1.png" type="image/png">
+                                                            <img src="media/img/selection-1.png" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="selection-item-title">
+                                                        <span>BST House</span>
+                                                        <svg aria-hidden="true">
+                                                            <use href="media/sprite.svg#angle-right"></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-controls">
+                                            <div class="swiper-pagination"></div>
+                                            <div class="swiper-navigation">
+                                                <button class="reset-button swiper-navigation-prev" type="button" aria-label="Назад">
+                                                    <svg aria-hidden="true">
+                                                        <use href="media/sprite.svg#angle-left"></use>
+                                                    </svg>
+                                                </button>
+                                                <button class="reset-button swiper-navigation-next" type="button" aria-label="Вперед">
+                                                    <svg aria-hidden="true">
+                                                        <use href="media/sprite.svg#angle-right"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-stripe section-stripe-bottom clients">
+            <div class="container">
+                <div class="clients-body" data-aos="fade-up">
+                    <h2 class="section-title">
+                        <svg aria-hidden="true">
+                            <use href="media/sprite.svg#triangle-right"></use>
+                        </svg>Наші клієнти
+                    </h2>
+                    <div class="clients-grid">
+                        <div class="clients-grid-item">
+                            <a href="#" target="_blank">
+                                <picture>
+                                    <source srcset="media/img/client-1.webp" type="image/webp">
+                                    <source srcset="media/img/client-1.png" type="image/png">
+                                    <img src="media/img/client-1.png" alt="lorem ipsum">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="clients-grid-item">
+                            <a href="#" target="_blank">
+                                <picture>
+                                    <source srcset="media/img/client-2.webp" type="image/webp">
+                                    <source srcset="media/img/client-2.png" type="image/png">
+                                    <img src="media/img/client-2.png" alt="lorem ipsum">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="clients-grid-item">
+                            <a href="#" target="_blank">
+                                <picture>
+                                    <source srcset="media/img/client-3.webp" type="image/webp">
+                                    <source srcset="media/img/client-3.png" type="image/png">
+                                    <img src="media/img/client-3.png" alt="lorem ipsum">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="clients-grid-item">
+                            <a href="#" target="_blank">
+                                <picture>
+                                    <source srcset="media/img/client-4.webp" type="image/webp">
+                                    <source srcset="media/img/client-4.png" type="image/png">
+                                    <img src="media/img/client-4.png" alt="lorem ipsum">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="clients-grid-item">
+                            <a href="#" target="_blank">
+                                <picture>
+                                    <source srcset="media/img/client-1.webp" type="image/webp">
+                                    <source srcset="media/img/client-1.png" type="image/png">
+                                    <img src="media/img/client-1.png" alt="lorem ipsum">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="clients-grid-item">
+                            <a href="#" target="_blank">
+                                <picture>
+                                    <source srcset="media/img/client-2.webp" type="image/webp">
+                                    <source srcset="media/img/client-2.png" type="image/png">
+                                    <img src="media/img/client-2.png" alt="lorem ipsum">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="clients-grid-item">
+                            <a href="#" target="_blank">
+                                <picture>
+                                    <source srcset="media/img/client-3.webp" type="image/webp">
+                                    <source srcset="media/img/client-3.png" type="image/png">
+                                    <img src="media/img/client-3.png" alt="lorem ipsum">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="clients-grid-item">
+                            <a href="#" target="_blank">
+                                <picture>
+                                    <source srcset="media/img/client-4.webp" type="image/webp">
+                                    <source srcset="media/img/client-4.png" type="image/png">
+                                    <img src="media/img/client-4.png" alt="lorem ipsum">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="clients-grid-item">
+                            <a href="#" target="_blank">
+                                <picture>
+                                    <source srcset="media/img/client-1.webp" type="image/webp">
+                                    <source srcset="media/img/client-1.png" type="image/png">
+                                    <img src="media/img/client-1.png" alt="lorem ipsum">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="clients-grid-item">
+                            <a href="#" target="_blank">
+                                <picture>
+                                    <source srcset="media/img/client-2.webp" type="image/webp">
+                                    <source srcset="media/img/client-2.png" type="image/png">
+                                    <img src="media/img/client-2.png" alt="lorem ipsum">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="clients-grid-item">
+                            <a href="#" target="_blank">
+                                <picture>
+                                    <source srcset="media/img/client-3.webp" type="image/webp">
+                                    <source srcset="media/img/client-3.png" type="image/png">
+                                    <img src="media/img/client-3.png" alt="lorem ipsum">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="clients-grid-item">
+                            <a href="#" target="_blank">
+                                <picture>
+                                    <source srcset="media/img/client-4.webp" type="image/webp">
+                                    <source srcset="media/img/client-4.png" type="image/png">
+                                    <img src="media/img/client-4.png" alt="lorem ipsum">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="clients-grid-item">
+                            <a href="#" target="_blank">
+                                <picture>
+                                    <source srcset="media/img/client-1.webp" type="image/webp">
+                                    <source srcset="media/img/client-1.png" type="image/png">
+                                    <img src="media/img/client-1.png" alt="lorem ipsum">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="clients-grid-item">
+                            <a href="#" target="_blank">
+                                <picture>
+                                    <source srcset="media/img/client-2.webp" type="image/webp">
+                                    <source srcset="media/img/client-2.png" type="image/png">
+                                    <img src="media/img/client-2.png" alt="lorem ipsum">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="page-bottom" data-aos="decoration">
+            <span class="page-bottom-blur page-bottom-blur-desktop container"></span>
+            <section class="section-padding form">
+                <div class="container">
+                    <div class="form-bg parallax" aria-hidden="true">
+                        <picture>
+                            <source srcset="media/img/form-bg.webp" type="image/webp" />
+                            <source srcset="media/img/form-bg.png" type="image/png" />
+                            <img src="media/img/form-bg.png" alt="" />
+                        </picture>
+                    </div>
+                    <div class="form-body">
+                        <h2 class="section-title">
+                            <svg aria-hidden="true">
+                                <use href="media/sprite.svg#triangle-right"></use>
+                            </svg>Почати будівництво
+                        </h2>
+                        <form class="form-main" novalidate="novalidate">
+                            <div class="form-item">
+                                <input type="text" placeholder="Ім’я" name="name" required="required" autocomplete="off" />
+                            </div>
+                            <div class="form-item">
+                                <input type="tel" placeholder="Номер телефону" name="number" required="required" autocomplete="off" />
+                            </div>
+                            <div class="form-item form-submit">
+                                <button class="reset-button button button-outlined button-condensed" type="submit">
+                                    <span class="ripple"></span>НАДІСЛАТИ
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer section-padding">
+                <div class="container">
+                    <div class="footer-body">
+                        <div class="footer-top">
+                            <div class="footer-top-body">
+                                <div class="footer-logo">
+                                    <a href="#" aria-label="Головна">
+                                        <svg viewBox="0 0 77 50" aria-hidden="true">
+                                            <use href="media/sprite.svg#logo"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="footer-description">Послуги в сфері будівництва. Організація будівельних команд, проектування, супровід будівництва</div>
+                                <nav class="footer-nav">
+                                    <ul class="reset-list">
+                                        <li>
+                                            <a class="footer-link active" href="index.html">Головна</a>
+                                        </li>
+                                        <li>
+                                            <a class="footer-link" href="about.html">Про нас</a>
+                                        </li>
+                                        <li>
+                                            <a class="footer-link" href="projects.html">Проєкти</a>
+                                        </li>
+                                        <li>
+                                            <a class="footer-link" href="collaboration.html">Співпраця</a>
+                                        </li>
+                                        <li>
+                                            <a class="footer-link" href="contacts.html">Контакти</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="footer-bottom">
+                            <div class="footer-bottom-body">
+                                <h3 class="footer-bottom-title">Головний офіс</h3>
+                                <div class="footer-address">
+                                    <a href="https://www.google.com/maps" target="_blank">Україна. м. Київ, вул. Староноводницька, 13, офіс 126</a>
+                                </div>
+                                <div class="footer-tel">
+                                    <a class="tel" href="tel:+380666364555">
+                                        <span aria-hidden="true">+380 66 636 45 55</span>
+                                        <span class="visually-hidden">Подзвоніть нам: +380 66 636 45 55</span>
+                                    </a>
+                                </div>
+                                <div class="footer-social">
+                                    <div class="social">
+                                        <ul class="social-list reset-list">
+                                            <li class="social-list-item">
+                                                <a class="social-link" href="#" target="_blank" aria-label="Наш канал на Ютубі">
+                                                    <svg aria-hidden="true">
+                                                        <use href="media/sprite.svg#youtube"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li class="social-list-item">
+                                                <a class="social-link" href="#" target="_blank" aria-label="Наша сторінка в Інстаграм">
+                                                    <svg aria-hidden="true">
+                                                        <use href="media/sprite.svg#instagram"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li class="social-list-item">
+                                                <a class="social-link" href="#" target="_blank" aria-label="Наша сторінка в Фейсбуці">
+                                                    <svg aria-hidden="true">
+                                                        <use href="media/sprite.svg#facebook"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-copyright" id="footer-copyright">
+                            <div class="footer-copyright-body">33bY Construction. All rights reserved</div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="modal fade" id="application" tabindex="-1" aria-labelledby="application-title" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button class="modal-close reset-button" type="button" aria-label="Закрити" data-sd-dismiss="modal"></button>
+                        <h2 class="section-title" id="application-title">
+                            <svg aria-hidden="true">
+                                <use href="media/sprite.svg#triangle-right"></use>
+                            </svg>Заявка
+                        </h2>
+                        <form class="application-form" id="application-form" novalidate>
+                            <div class="application-form-item">
+                                <input type="text" name="name" placeholder="Ім’я" required autocomplete="off">
+                            </div>
+                            <div class="application-form-item">
+                                <input type="tel" name="number" placeholder="Номер телефону" required autocomplete="off">
+                            </div>
+                            <div class="application-form-item application-form-submit">
+                                <button class="reset-button button button-outlined button-condensed" type="submit">
+                                    <span class="ripple"></span>НАДІСЛАТИ
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fixed-top" id="toasts">
+            <div class="toast" id="submit-form-toast" aria-atomic="true" role="alert" aria-live="polite">
+                <div class="collapse">
+                    <div class="toast-body">
+                        <div class="toast-title">Дякуюмо за звернення</div>
+                        <div class="toast-text">Незабаром ми з Вами зв’яжемось</div>
+                    </div>
+                </div>
+            </div>
+            <div class="toast" id="cookies-toast" aria-atomic="true" role="alert" aria-live="polite">
+                <div class="collapse">
+                    <div class="toast-body">
+                        <div class="toast-title">This website uses cookies.</div>
+                        <button class="toast-button reset-button" id="cookies_accept" type="button">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/508.js" async onerror="this.remove()"></script>
+    <script src="js/523.js" async onerror="this.remove()"></script>
+    <script src="js/843.js" async onerror="this.remove()"></script>
+    <script src="js/869.js" async onerror="this.remove()"></script>
+    <script src="js/manageForms.js"></script>
+</body>
+</html>

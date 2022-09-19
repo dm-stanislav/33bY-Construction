@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>33 Architecture | VastuHouse</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="media/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="media/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="media/favicons/favicon-32x32.png" type="image/png">
+    <link rel="icon" sizes="48x48" href="media/favicons/favicon-48x48.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="media/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="media/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="media/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="media/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="media/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="media/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="media/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="media/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="media/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="media/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="media/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="media/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="media/favicons/apple-touch-icon-1024x1024.png">
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="preload" href="css/vendor.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+</head>
+<body data-sd-map-api="AIzaSyBkPajfNaB9_YtMqjuNOEMbmLt3EN9vVHA">
+    <div class="wrapper">
+        <div class="preloader" id="preloader">
+            <div class="preloader__body">
+                <svg aria-hidden="true">
+                    <use href="media/sprite.svg#logo"></use>
+                </svg>
+                <svg aria-hidden="true">
+                    <use href="media/sprite.svg#logo"></use>
+                </svg>
+            </div>
+        </div>
+        <header class="header fixed-top no-active" id="header" data-sd-auto-expand="true">
+            <div class="container">
+                <nav class="header-body">
+                    <div>
+                        <a class="header-logo" href="index.html" aria-label="Головна">
+                            <svg viewBox="0 0 77 50" aria-hidden="true">
+                                <use href="media/sprite.svg#logo"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header-menu">
+                        <div class="drawer header-menu-drawer" id="header-menu" tabIndex="-1">
+                            <div class="drawer-body" data-sd-distance="data-sd-distance" data-sd-target=".drawer-menu" data-sd-center="[false]" data-sd-offset="[0, 5.5]">
+                                <div class="lang lang-mobile header-menu-lang">
+                                    <ul class="lang-list reset-list">
+                                        <li class="lang-list-item">
+                                            <a class="lang-link active" href="#">
+                                                <span aria-hidden="true">UA</span>
+                                                <span class="visually-hidden">Українська</span>
+                                            </a>
+                                        </li>
+                                        <li class="lang-list-item">
+                                            <a class="lang-link" href="#">
+                                                <span aria-hidden="true">EN</span>
+                                                <span class="visually-hidden">English</span>
+                                            </a>
+                                        </li>
+                                        <li class="lang-list-item">
+                                            <a class="lang-link" href="#">
+                                                <span aria-hidden="true">DE</span>
+                                                <span class="visually-hidden">Deutsch</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="header-menu-tel">
+                                    <a class="tel" href="tel:+380666364555">
+                                        <span aria-hidden="true">+380 66 636 45 55</span>
+                                        <span class="visually-hidden">Подзвоніть нам: +380 66 636 45 55</span>
+                                    </a>
+                                </div>
+                                <div class="drawer-menu">
+                                    <div class="header-navigation">
+                                        <ul class="header-navigation-list reset-list">
+                                            <li class="header-navigation-item">
+                                                <a class="header-navigation-link" href="index.html">Головна</a>
+                                            </li>
+                                            <li class="header-navigation-item">
+                                                <a class="header-navigation-link" href="about.html">Про нас</a>
+                                            </li>
+                                            <li class="header-navigation-item">
+                                                <a class="header-navigation-link" href="projects.html">Проєкти</a>
+                                            </li>
+                                            <li class="header-navigation-item">
+                                                <a class="header-navigation-link" href="collaboration.html">Співпраця</a>
+                                            </li>
+                                            <li class="header-navigation-item">
+                                                <a class="header-navigation-link" href="contacts.html">Контакти</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="social header-menu-social">
+                                    <ul class="social-list reset-list">
+                                        <li class="social-list-item">
+                                            <a class="social-link" href="#" target="_blank" aria-label="Наш канал на Ютубі">
+                                                <svg aria-hidden="true">
+                                                    <use href="media/sprite.svg#youtube"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="social-list-item">
+                                            <a class="social-link" href="#" target="_blank" aria-label="Наша сторінка в Інстаграм">
+                                                <svg aria-hidden="true">
+                                                    <use href="media/sprite.svg#instagram"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="social-list-item">
+                                            <a class="social-link" href="#" target="_blank" aria-label="Наша сторінка в Фейсбуці">
+                                                <svg aria-hidden="true">
+                                                    <use href="media/sprite.svg#facebook"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lang dropdown-center header-lang">
+                            <button class="lang-button reset-button" id="header-lang" type="button" data-sd-toggle="dropdown" aria-expanded="false">
+                                <span aria-hidden="true">UA</span>
+                                <span class="visually-hidden">Українська</span>
+                                <svg aria-hidden="true">
+                                    <use href="media/sprite.svg#angle-down"></use>
+                                </svg>
+                            </button>
+                            <div class="dropdown-menu">
+                                <div class="collapse">
+                                    <ul class="lang-list reset-list" aria-labelledby="header-lang">
+                                        <li class="lang-list-item">
+                                            <a class="lang-link dropdown-item" href="#">
+                                                <span aria-hidden="true">EN</span>
+                                                <span class="visually-hidden">English</span>
+                                            </a>
+                                        </li>
+                                        <li class="lang-list-item">
+                                            <a class="lang-link dropdown-item" href="#">
+                                                <span aria-hidden="true">DE</span>
+                                                <span class="visually-hidden">Deutsch</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-contacts">
+                            <a class="tel header-tel" href="tel:+380666364555">
+                                <span aria-hidden="true">+380 66 636 45 55</span>
+                                <span class="visually-hidden">Подзвоніть нам: +380 66 636 45 55</span>
+                            </a>
+                            <div class="social">
+                                <ul class="social-list reset-list">
+                                    <li class="social-list-item">
+                                        <a class="social-link" href="#" target="_blank" aria-label="Наш канал на Ютубі">
+                                            <svg aria-hidden="true">
+                                                <use href="media/sprite.svg#youtube"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-list-item">
+                                        <a class="social-link" href="#" target="_blank" aria-label="Наша сторінка в Інстаграм">
+                                            <svg aria-hidden="true">
+                                                <use href="media/sprite.svg#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-list-item">
+                                        <a class="social-link" href="#" target="_blank" aria-label="Наша сторінка в Фейсбуці">
+                                            <svg aria-hidden="true">
+                                                <use href="media/sprite.svg#facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="drawer-toggle reset-button header-burger" type="button" data-sd-toggle="drawer" data-sd-target="#header-menu" aria-label="Відкрити меню">
+                            <span class="menu-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="page-nav section" data-aos="blur">
+            <div class="container">
+                <div class="page-nav-body">
+                    <h2 class="page-nav-title">VastuHouse</h2>
+                    <nav class="breadcrumbs page-nav-breadcrumbs">
+                        <ul class="breadcrumbs-list reset-list">
+                            <li class="breadcrumbs-item">
+                                <a class="breadcrumbs-link" href="index.html">Головна</a>
+                            </li>
+                            <li class="breadcrumbs-item">
+                                <span class="breadcrumbs-current">VastuHouse</span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <section class="info section section-stripe">
+            <div class="container">
+                <div class="info-body" data-aos="fade-up">
+                    <div class="page-title info-title">
+                        <h2 class="section-title section-title-no-margin">
+                            <svg aria-hidden="true">
+                                <use href="media/sprite.svg#triangle-right"></use>
+                            </svg>VastuHouse
+                        </h2>
+                    </div>
+                    <div data-aos="decoration">
+                        <div class="info-content">
+                            <!-- Якщо не потрібно, щоб фото відкривалось по кліку, то треба видалити класи 'info-img-clickable', 'lightgallery' і тег '<a>'-->
+                            <div class="info-img info-img-clickable lightgallery">
+                                <a class="lightgallery-item" href="media/img/info.png">
+                                    <picture>
+                                        <source srcset="media/img/info.webp" type="image/webp">
+                                        <source srcset="media/img/info.png" type="image/png">
+                                        <img src="media/img/info.png" alt="назва або опис об'єкту">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="info-grid">
+                                <div class="info-grid-item">Розташування</div>
+                                <div class="info-grid-item">Київ/Україна</div>
+                                <div class="info-grid-item">Рік реалізації</div>
+                                <div class="info-grid-item">2020</div>
+                                <div class="info-grid-item">Категорія</div>
+                                <div class="info-grid-item">Архітектура</div>
+                                <div class="info-grid-item">Тривалість</div>
+                                <div class="info-grid-item">9 міс.</div>
+                                <div class="info-grid-item">Дизайн</div>
+                                <div class="info-grid-item">Олександр Василишин</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="description section section-stripe">
+            <div class="container">
+                <div class="description-body">
+                    <div class="description-item" data-aos="decoration">
+                        <span data-aos="fade-up">Виклики.</span>
+                    </div>
+                    <div class="description-item">
+                        <span data-aos="fade-up">У квартирі панує гармонійне поєднання різних стилів. Всім відомо, що баланс стилів – це тонка межа між розкішшю і кітчем, в основі якої лежить свобода дизайнера і професіоналізм будівельної компанії!</span>
+                    </div>
+                    <div class="description-item" data-aos="decoration">
+                        <span data-aos="fade-up">Планування.</span>
+                    </div>
+                    <div class="description-item">
+                        <span data-aos="fade-up">Квартира складається з двох просторих кімнат, вбиральні, двох санвузлів і передпокою.</span>
+                    </div>
+                    <div class="description-item" data-aos="decoration">
+                        <span data-aos="fade-up">Реалізація.</span>
+                    </div>
+                    <div class="description-item">
+                        <span data-aos="fade-up">Комплексні ремонтні роботи на всіх етапах, в тому числі авторський нагляд.</span>
+                    </div>
+                    <div class="description-item" data-aos="decoration">
+                        <span data-aos="fade-up">Матеріали.</span>
+                    </div>
+                    <div class="description-item">
+                        <span data-aos="fade-up">Використовувані матеріали: натуральне дерево, мармур, скляні і тканинні панелі, керамограніт, штучний камінь.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery section section-stripe section-stripe-bottom">
+            <div class="container">
+                <div class="gallery-body lightgallery">
+                    <a class="lightgallery-item gallery-item" data-aos="zoom-in" href="media/img/gallery.png" data-pswp-width="1203" data-pswp-height="816">
+                        <picture>
+                            <source srcset="media/img/gallery.webp" type="image/webp">
+                            <source srcset="media/img/gallery.png" type="image/png">
+                            <img src="media/img/gallery.png" alt="опис фото...">
+                        </picture>
+                    </a>
+                    <a class="lightgallery-item gallery-item" data-aos="zoom-in" href="media/img/gallery.png" data-pswp-width="1203" data-pswp-height="816">
+                        <picture>
+                            <source srcset="media/img/gallery.webp" type="image/webp">
+                            <source srcset="media/img/gallery.png" type="image/png">
+                            <img src="media/img/gallery.png" alt="опис фото...">
+                        </picture>
+                    </a>
+                    <a class="lightgallery-item gallery-item" data-aos="zoom-in" href="media/img/gallery.png" data-pswp-width="1203" data-pswp-height="816">
+                        <picture>
+                            <source srcset="media/img/gallery.webp" type="image/webp">
+                            <source srcset="media/img/gallery.png" type="image/png">
+                            <img src="media/img/gallery.png" alt="опис фото...">
+                        </picture>
+                    </a>
+                    <a class="lightgallery-item gallery-item" data-aos="zoom-in" href="media/img/gallery.png" data-pswp-width="1203" data-pswp-height="816">
+                        <picture>
+                            <source srcset="media/img/gallery.webp" type="image/webp">
+                            <source srcset="media/img/gallery.png" type="image/png">
+                            <img src="media/img/gallery.png" alt="опис фото...">
+                        </picture>
+                    </a>
+                    <a class="lightgallery-item gallery-item" data-aos="zoom-in" href="media/img/gallery.png" data-pswp-width="1203" data-pswp-height="816">
+                        <picture>
+                            <source srcset="media/img/gallery.webp" type="image/webp">
+                            <source srcset="media/img/gallery.png" type="image/png">
+                            <img src="media/img/gallery.png" alt="опис фото...">
+                        </picture>
+                    </a>
+                    <a class="lightgallery-item gallery-item" data-aos="zoom-in" href="media/img/gallery.png" data-pswp-width="1203" data-pswp-height="816">
+                        <picture>
+                            <source srcset="media/img/gallery.webp" type="image/webp">
+                            <source srcset="media/img/gallery.png" type="image/png">
+                            <img src="media/img/gallery.png" alt="опис фото...">
+                        </picture>
+                    </a>
+                    <a class="lightgallery-item gallery-item" data-aos="zoom-in" href="media/img/gallery.png" data-pswp-width="1203" data-pswp-height="816">
+                        <picture>
+                            <source srcset="media/img/gallery.webp" type="image/webp">
+                            <source srcset="media/img/gallery.png" type="image/png">
+                            <img src="media/img/gallery.png" alt="опис фото...">
+                        </picture>
+                    </a>
+                    <a class="lightgallery-item gallery-item" data-aos="zoom-in" href="media/img/gallery.png" data-pswp-width="1203" data-pswp-height="816">
+                        <picture>
+                            <source srcset="media/img/gallery.webp" type="image/webp">
+                            <source srcset="media/img/gallery.png" type="image/png">
+                            <img src="media/img/gallery.png" alt="опис фото...">
+                        </picture>
+                    </a>
+                    <a class="lightgallery-item gallery-item" data-aos="zoom-in" href="media/img/gallery.png" data-pswp-width="1203" data-pswp-height="816">
+                        <picture>
+                            <source srcset="media/img/gallery.webp" type="image/webp">
+                            <source srcset="media/img/gallery.png" type="image/png">
+                            <img src="media/img/gallery.png" alt="опис фото...">
+                        </picture>
+                    </a>
+                    <a class="lightgallery-item gallery-item" data-aos="zoom-in" href="media/img/gallery.png" data-pswp-width="1203" data-pswp-height="816">
+                        <picture>
+                            <source srcset="media/img/gallery.webp" type="image/webp">
+                            <source srcset="media/img/gallery.png" type="image/png">
+                            <img src="media/img/gallery.png" alt="опис фото...">
+                        </picture>
+                    </a>
+                    <a class="lightgallery-item gallery-item gallery-item-video" data-aos="zoom-in" href="https://www.youtube.com/watch?v=NpEaa2P7qZI">
+                        <div class="video" data-sd-video="NpEaa2P7qZI"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="page-bottom" data-aos="decoration">
+            <span class="page-bottom-blur page-bottom-blur-desktop container"></span>
+            <section class="section-padding form">
+                <div class="container">
+                    <div class="form-bg parallax" aria-hidden="true">
+                        <picture>
+                            <source srcset="media/img/form-bg.webp" type="image/webp" />
+                            <source srcset="media/img/form-bg.png" type="image/png" />
+                            <img src="media/img/form-bg.png" alt="" />
+                        </picture>
+                    </div>
+                    <div class="form-body">
+                        <h2 class="section-title">
+                            <svg aria-hidden="true">
+                                <use href="media/sprite.svg#triangle-right"></use>
+                            </svg>Почати будівництво
+                        </h2>
+                        <form class="form-main" novalidate="novalidate">
+                            <div class="form-item">
+                                <input type="text" placeholder="Ім’я" name="name" required="required" autocomplete="off" />
+                            </div>
+                            <div class="form-item">
+                                <input type="tel" placeholder="Номер телефону" name="number" required="required" autocomplete="off" />
+                            </div>
+                            <div class="form-item form-submit">
+                                <button class="reset-button button button-outlined button-condensed" type="submit">
+                                    <span class="ripple"></span>НАДІСЛАТИ
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer section-padding">
+                <div class="container">
+                    <div class="footer-body">
+                        <div class="footer-top">
+                            <div class="footer-top-body">
+                                <div class="footer-logo">
+                                    <a href="#" aria-label="Головна">
+                                        <svg viewBox="0 0 77 50" aria-hidden="true">
+                                            <use href="media/sprite.svg#logo"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="footer-description">Послуги в сфері будівництва. Організація будівельних команд, проектування, супровід будівництва</div>
+                                <nav class="footer-nav">
+                                    <ul class="reset-list">
+                                        <li>
+                                            <a class="footer-link" href="index.html">Головна</a>
+                                        </li>
+                                        <li>
+                                            <a class="footer-link" href="about.html">Про нас</a>
+                                        </li>
+                                        <li>
+                                            <a class="footer-link" href="projects.html">Проєкти</a>
+                                        </li>
+                                        <li>
+                                            <a class="footer-link" href="collaboration.html">Співпраця</a>
+                                        </li>
+                                        <li>
+                                            <a class="footer-link" href="contacts.html">Контакти</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="footer-bottom">
+                            <div class="footer-bottom-body">
+                                <h3 class="footer-bottom-title">Головний офіс</h3>
+                                <div class="footer-address">
+                                    <a href="https://www.google.com/maps" target="_blank">Україна. м. Київ, вул. Староноводницька, 13, офіс 126</a>
+                                </div>
+                                <div class="footer-tel">
+                                    <a class="tel" href="tel:+380666364555">
+                                        <span aria-hidden="true">+380 66 636 45 55</span>
+                                        <span class="visually-hidden">Подзвоніть нам: +380 66 636 45 55</span>
+                                    </a>
+                                </div>
+                                <div class="footer-social">
+                                    <div class="social">
+                                        <ul class="social-list reset-list">
+                                            <li class="social-list-item">
+                                                <a class="social-link" href="#" target="_blank" aria-label="Наш канал на Ютубі">
+                                                    <svg aria-hidden="true">
+                                                        <use href="media/sprite.svg#youtube"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li class="social-list-item">
+                                                <a class="social-link" href="#" target="_blank" aria-label="Наша сторінка в Інстаграм">
+                                                    <svg aria-hidden="true">
+                                                        <use href="media/sprite.svg#instagram"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li class="social-list-item">
+                                                <a class="social-link" href="#" target="_blank" aria-label="Наша сторінка в Фейсбуці">
+                                                    <svg aria-hidden="true">
+                                                        <use href="media/sprite.svg#facebook"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-copyright" id="footer-copyright">
+                            <div class="footer-copyright-body">33bY Construction. All rights reserved</div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="modal fade" id="application" tabindex="-1" aria-labelledby="application-title" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button class="modal-close reset-button" type="button" aria-label="Закрити" data-sd-dismiss="modal"></button>
+                        <h2 class="section-title" id="application-title">
+                            <svg aria-hidden="true">
+                                <use href="media/sprite.svg#triangle-right"></use>
+                            </svg>Заявка
+                        </h2>
+                        <form class="application-form" id="application-form" novalidate>
+                            <div class="application-form-item">
+                                <input type="text" name="name" placeholder="Ім’я" required autocomplete="off">
+                            </div>
+                            <div class="application-form-item">
+                                <input type="tel" name="number" placeholder="Номер телефону" required autocomplete="off">
+                            </div>
+                            <div class="application-form-item application-form-submit">
+                                <button class="reset-button button button-outlined button-condensed" type="submit">
+                                    <span class="ripple"></span>НАДІСЛАТИ
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fixed-top" id="toasts">
+            <div class="toast" id="submit-form-toast" aria-atomic="true" role="alert" aria-live="polite">
+                <div class="collapse">
+                    <div class="toast-body">
+                        <div class="toast-title">Дякуюмо за звернення</div>
+                        <div class="toast-text">Незабаром ми з Вами зв’яжемось</div>
+                    </div>
+                </div>
+            </div>
+            <div class="toast" id="cookies-toast" aria-atomic="true" role="alert" aria-live="polite">
+                <div class="collapse">
+                    <div class="toast-body">
+                        <div class="toast-title">This website uses cookies.</div>
+                        <button class="toast-button reset-button" id="cookies_accept" type="button">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/508.js" async onerror="this.remove()"></script>
+    <script src="js/523.js" async onerror="this.remove()"></script>
+    <script src="js/843.js" async onerror="this.remove()"></script>
+    <script src="js/869.js" async onerror="this.remove()"></script>
+    <script src="js/manageForms.js"></script>
+</body>
+</html>
